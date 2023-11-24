@@ -32,7 +32,7 @@
 # Modified by Xinlong Wang
 # -------------------------------------------------------------------------
 
-from detectron2.config import CfgNode as CN
+from old_detectron2.detectron2.config import CfgNode as CN
 
 
 def add_solo_config(cfg):

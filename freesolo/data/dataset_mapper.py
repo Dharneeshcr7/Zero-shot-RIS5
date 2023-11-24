@@ -37,10 +37,10 @@ from PIL import Image
 from typing import List, Optional, Union
 import torch
 
-from detectron2.config import configurable
-import detectron2.data.detection_utils as utils
-import detectron2.data.transforms as T
-from detectron2.data.dataset_mapper import DatasetMapper
+from old_detectron2.detectron2.config import configurable
+import old_detectron2.detectron2.data.detection_utils as utils
+import old_detectron2.detectron2.data.transforms as T
+from old_detectron2.detectron2.data.dataset_mapper import DatasetMapper
 
 from freesolo.data.detection_utils import build_strong_augmentation
 from freesolo.data.detection_utils import annotations_to_instances

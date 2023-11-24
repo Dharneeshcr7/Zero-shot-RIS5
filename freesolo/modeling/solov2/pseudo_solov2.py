@@ -36,8 +36,8 @@ from skimage import color
 import torch
 import torch.nn.functional as F
 
-from detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
-from detectron2.structures import ImageList
+from old_detectron2.detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
+from old_detectron2.detectron2.structures import ImageList
 
 from .solov2 import SOLOv2
 from .utils import point_nms, matrix_nms, get_images_color_similarity

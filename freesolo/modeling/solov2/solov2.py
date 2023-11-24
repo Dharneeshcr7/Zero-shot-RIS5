@@ -40,11 +40,11 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from detectron2.layers import ShapeSpec, batched_nms, cat, paste_masks_in_image
-from detectron2.modeling.backbone import build_backbone
-from detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
-from detectron2.structures import Boxes, ImageList, Instances
-from detectron2.utils.logger import log_first_n
+from old_detectron2.detectron2.layers import ShapeSpec, batched_nms, cat, paste_masks_in_image
+from old_detectron2.detectron2.modeling.backbone import build_backbone
+from old_detectron2.detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
+from old_detectron2.detectron2.structures import Boxes, ImageList, Instances
+from old_detectron2.detectron2.utils.logger import log_first_n
 from fvcore.nn import sigmoid_focal_loss_jit
 
 from .utils import imrescale, center_of_mass, point_nms, mask_nms, matrix_nms, dice_coefficient, compute_pairwise_term

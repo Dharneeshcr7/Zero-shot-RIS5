@@ -23,7 +23,7 @@
 # -------------------------------------------------------------------------
 
 import logging
-from detectron2.data.common import MapDataset, AspectRatioGroupedDataset
+from old_detectron2.detectron2.data.common import MapDataset, AspectRatioGroupedDataset
 
 
 class AspectRatioGroupedDatasetTwoCrop(AspectRatioGroupedDataset):

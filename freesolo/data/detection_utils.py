@@ -37,7 +37,7 @@ import numpy as np
 import pycocotools.mask as mask_util
 import torch
 
-from detectron2.structures import (
+from old_detectron2.detectron2.structures import (
     BitMasks,
     Boxes,
     BoxMode,

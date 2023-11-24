@@ -32,7 +32,7 @@
 
 import os
 import contextlib
-from detectron2.data import DatasetCatalog, MetadataCatalog
+from old_detectron2.detectron2.data import DatasetCatalog, MetadataCatalog
 from freesolo.data.datasets.coco import register_coco_instances
 from fvcore.common.timer import Timer
 from fvcore.common.file_io import PathManager

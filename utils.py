@@ -1,8 +1,8 @@
 import argparse
 import sys
 sys.path.append('./')
-from detectron2.config import get_cfg
-from detectron2.engine import  default_setup
+from old_detectron2.detectron2.config import get_cfg
+from old_detectron2.detectron2.engine import  default_setup
 from freesolo import add_solo_config
 import os
 import numpy as np

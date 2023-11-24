@@ -35,17 +35,17 @@ import numpy as np
 import operator
 import json
 import torch.utils.data
-from detectron2.utils.comm import get_world_size
-from detectron2.data.common import (
+from old_detectron2.detectron2.utils.comm import get_world_size
+from old_detectron2.detectron2.data.common import (
     DatasetFromList,
     MapDataset,
 )
-from detectron2.data.samplers import (
+from old_detectron2.detectron2.data.samplers import (
     InferenceSampler,
     RepeatFactorTrainingSampler,
     TrainingSampler,
 )
-from detectron2.data.build import (
+from old_detectron2.detectron2.data.build import (
     trivial_batch_collator,
     worker_init_reset_seed,
     get_detection_dataset_dicts,

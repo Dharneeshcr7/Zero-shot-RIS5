@@ -14,15 +14,15 @@ import torch.nn.functional as F
 from fvcore.nn.precise_bn import get_bn_modules
 import numpy as np
 
-import detectron2.utils.comm as comm
-from detectron2.checkpoint import DetectionCheckpointer
-from detectron2.engine import DefaultTrainer, SimpleTrainer, TrainerBase
+import old_detectron2.detectron2.utils.comm as comm
+from old_detectron2.detectron2.checkpoint import DetectionCheckpointer
+from old_detectron2.detectron2.engine import DefaultTrainer, SimpleTrainer, TrainerBase
 #from detectron2.engine.train_loop import AMPTrainer
-from detectron2.utils.events import EventStorage
-from detectron2.evaluation import COCOEvaluator, verify_results
-from detectron2.engine import hooks
-from detectron2.structures.instances import Instances
-from detectron2.utils.env import TORCH_VERSION
+from old_detectron2.detectron2.utils.events import EventStorage
+from old_detectron2.detectron2.evaluation import COCOEvaluator, verify_results
+from old_detectron2.detectron2.engine import hooks
+from old_detectron2.detectron2.structures.instances import Instances
+from old_detectron2.detectron2.utils.env import TORCH_VERSION
 
 from freesolo.data.build import (
     build_detection_semisup_train_loader_two_crops,
